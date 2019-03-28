@@ -1,0 +1,8 @@
+*transform sas to csv in sas
+
+libname wombat 'C:\Users\rwang102\Downloads\CVM\data\raw data';
+proc export data=wombat.adcfbl
+outfile='C:\Users\rwang102\Downloads\CVM\data\adcfbl.csv'
+dbms=csv
+replace;
+run;
